@@ -13,7 +13,7 @@ const fetchBreedDescription = (breedName, cb) => {
       return cb(`Status code: ${resp.statusCode} - Status message: ${resp.statusMessage}`);
     }
     if (data.length === 0) {
-      return cb(`Breed data not found! Check your spelling :)`);
+      return cb(`Breed details don't exist! Check your spelling :)`);
     }
     const desc = data[0].description;
 
